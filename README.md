@@ -16,3 +16,5 @@ SnapStudio is an in-development open-source application which allows users to ed
   - **C#**: Programming language for implementing functionality and logic.
   - **NET Framework**: Provides libraries and tools for developing desktop applications.
   - **Visual Studio**: Integrated development environment (IDE) for building and debugging applications.
+# Contributing
+If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request.
