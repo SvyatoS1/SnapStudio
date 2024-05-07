@@ -1,3 +1,4 @@
+
 # SnapStudio
 SnapStudio is an in-development open-source application which allows users to edit photos with various features including rotating, flipping, applying filters, adjusting brightness and contrast. It is built using Windows Presentation Foundation (WPF), and providing a user-friendly interface for seamless photo editing for users of all Windows versions beggining with Windows 7.
   # Features
@@ -18,3 +19,4 @@ SnapStudio is an in-development open-source application which allows users to ed
   - **Visual Studio**: Integrated development environment (IDE) for building and debugging applications.
 # Contributing
 If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request.
+
