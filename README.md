@@ -6,7 +6,6 @@ SnapStudio is an open-source application currently in development, allowing user
 
 - **View Images**: View selected photos from the gallery.
 - **RGB modifier**: Rotate photos clockwise or counterclockwise to achieve the desired orientation.
-- **Adjust Brightness and Contrast**: Modify the brightness and contrast of photos to enhance their appearance.
 - **BSC modifier**: Allow user to adjust the brightness, saturation, and contrast of images.
 - **Custom Grayscale**: Enables users to convert color images to grayscale using custom settings. 
 - **Custom Matrix Transform**: Allows users to apply custom matrix transformations to images.
