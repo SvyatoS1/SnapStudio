@@ -213,7 +213,23 @@ namespace SnapStudio
 
         private void Invert_item_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                if (bitmapList.Count > 0)
+                {
+                    currentPicture = bitmapList[currentBitmap];
+                    currentPicture = MatrixConvertBitmap(currentPicture, invertConMatrix);
+                    addPicture(currentPicture);
+                }
+                else
+                {
+                    MessageBox.Show("No Picture, please open a a picture to edit it");
+                }
+            }
+            catch (Exception except)
+            {
+                MessageBox.Show(except.Message);
+            }
         }
 
         private void Undo_item_Click_1(object sender, RoutedEventArgs e)

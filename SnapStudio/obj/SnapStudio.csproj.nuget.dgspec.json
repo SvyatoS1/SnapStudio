@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\simch\\source\\repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj": {}
+    "C:\\Users\\simch\\Source\\Repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\simch\\source\\repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj": {
+    "C:\\Users\\simch\\Source\\Repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\simch\\source\\repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj",
+        "projectUniqueName": "C:\\Users\\simch\\Source\\Repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj",
         "projectName": "SnapStudio",
-        "projectPath": "C:\\Users\\simch\\source\\repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj",
+        "projectPath": "C:\\Users\\simch\\Source\\Repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj",
         "packagesPath": "C:\\Users\\simch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\simch\\source\\repos\\SnapStudio\\SnapStudio\\obj\\",
+        "outputPath": "C:\\Users\\simch\\Source\\Repos\\SnapStudio\\SnapStudio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
