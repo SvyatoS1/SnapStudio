@@ -56,12 +56,20 @@ namespace SnapStudio
 
         public void undoPicture()
         {
-
+            if (currentBitmap > 0)
+            {
+                currentBitmap--;
+                setMainPicture(currentBitmap);
+            }
         }
 
         public void redoPicture()
         {
-
+            if (currentBitmap < bitmapList.Count - 1)
+            {
+                currentBitmap++;
+                setMainPicture(currentBitmap);
+            }
         }
 
         public void setMainPicture(int currentState)
@@ -200,12 +208,44 @@ namespace SnapStudio
 
         private void Op_grey_item_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                if (bitmapList.Count > 0)
+                {
+                    currentPicture = bitmapList[currentBitmap];
+                    currentPicture = MatrixConvertBitmap(currentPicture, greyscaleConMatrix);
+                    addPicture(currentPicture);
+                }
+                else
+                {
+                    MessageBox.Show("No Picture, please open a a picture to edit it");
+                }
+            }
+            catch (Exception except)
+            {
+                MessageBox.Show(except.Message);
+            }
         }
 
         private void Invert_item_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                if (bitmapList.Count > 0)
+                {
+                    currentPicture = bitmapList[currentBitmap];
+                    currentPicture = MatrixConvertBitmap(currentPicture, invertConMatrix);
+                    addPicture(currentPicture);
+                }
+                else
+                {
+                    MessageBox.Show("No Picture, please open a a picture to edit it");
+                }
+            }
+            catch (Exception except)
+            {
+                MessageBox.Show(except.Message);
+            }
         }
 
         private void Undo_item_Click_1(object sender, RoutedEventArgs e)
