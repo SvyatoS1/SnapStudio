@@ -56,12 +56,20 @@ namespace SnapStudio
 
         public void undoPicture()
         {
-
+            if (currentBitmap > 0)
+            {
+                currentBitmap--;
+                setMainPicture(currentBitmap);
+            }
         }
 
         public void redoPicture()
         {
-
+            if (currentBitmap < bitmapList.Count - 1)
+            {
+                currentBitmap++;
+                setMainPicture(currentBitmap);
+            }
         }
 
         public void setMainPicture(int currentState)
