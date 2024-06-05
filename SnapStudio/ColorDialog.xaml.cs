@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SnapStudio
@@ -18,12 +17,35 @@ namespace SnapStudio
     /// <summary>
     /// Interaction logic for ColorDialog.xaml
     /// </summary>
-    public partial class ColorDialog : Page
+    public partial class ColorDialog : Window
     {
-
-        public ColorDialog()
+        private MainWindow myParentWindow;
+        private String controlType;
+        private RGB rgbControl;
+        public ColorDialog(MainWindow parentWindow, String cT)
         {
+            myParentWindow = parentWindow;
+            controlType = cT;
+
             InitializeComponent();
+            InitControl();
+        }
+
+        private void InitControl()
+        {
+            if (controlType == "RGB")
+            {
+                CreateRGB();
+                this.Width = rgbControl.Width + 26;
+                this.Height = rgbControl.Height + 26;
+                this.Title = "Red, Green, and Blue Channel Modifier";
+            }
+        }
+
+        private void CreateRGB()
+        {
+            rgbControl = new SnapStudio.RGB(myParentWindow, this);
+            this.Content = rgbControl;
         }
     }
 }

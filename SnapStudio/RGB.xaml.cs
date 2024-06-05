@@ -53,11 +53,7 @@ namespace SnapStudio
             return cMatrix;
         }
 
-        /// <summary>
-        /// Sets the main Bitmap permanently with the current user settings
-        /// Use only for changes that will be saved into state, i.e. the Apply
-        /// Button.
-        /// </summary>
+
         private void setMainBitmap()
         {
             // Create the appropriate matrix
@@ -73,11 +69,6 @@ namespace SnapStudio
             myParentWindow.addPicture(previewBitmap);
         }
 
-        /// <summary>
-        /// Sets the main Bitmap temporarily with the current user settings
-        /// Use only for previews of effects, as it isn't added to the BitmapList,
-        /// and goes away when this window is closed.
-        /// </summary>
         private void setTempBitmap()
         {
             // Create the appropriate matrix
@@ -104,11 +95,13 @@ namespace SnapStudio
         {
             setMainBitmap();
             myParentWindow.setMainPicture(myParentWindow.CurrentBitmap);
+            myColorDialog.Close();
         }
 
         private void Cancel_btn_Click_1(object sender, RoutedEventArgs e)
         {
             myParentWindow.setMainPicture(originalBitmapCount);
+            myColorDialog.Close();
         }
 
         private void RedSlider_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
