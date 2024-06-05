@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -165,7 +166,20 @@ namespace SnapStudio
 
         private void open_FileDialog(object sender, EventArgs e)
         {
-            
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(System.Environment.SpecialFolder.MyPictures);
+            openFileDialog.Filter = "JPEG Compressed Image (*.jpg)|*.jpg|GIF Image(*.gif)|*.gif|Bitmap Image(*.bmp)|*.bmp|PNG Image (*.png)|*.png";
+            openFileDialog.FilterIndex = 1;
+
+            Nullable<bool> result = openFileDialog.ShowDialog();
+
+            if (result == true)
+            {
+                currentPicture = new Bitmap(openFileDialog.FileName);
+
+                addPicture(currentPicture);
+                this.Title = openFileDialog.FileName;
+            }
         }
 
         private void Save_item_Click_1(object sender, EventArgs e)
