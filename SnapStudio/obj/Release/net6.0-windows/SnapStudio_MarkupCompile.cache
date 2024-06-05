@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\simch\source\repos\SnapStudio\SnapStudio\App.xaml
-11407045341
+3698705930
 
-3-1233169557
+5-1411756672
 195612144644
-MainWindow.xaml;
+ColorDialog.xaml;MainWindow.xaml;RGB.xaml;
 
 True
 

@@ -188,7 +188,22 @@ namespace SnapStudio
 
         private void RGB_item_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                if (bitmapList.Count > 0)
+                {
+                    SnapStudio.ColorDialog rgbWindow = new ColorDialog(this, "RGB");
+                    rgbWindow.Show();
+                }
+                else
+                {
+                    MessageBox.Show("No Picture, please open a a picture to edit it");
+                }
+            }
+            catch (Exception except)
+            {
+                MessageBox.Show(except.Message);
+            }
         }
 
         private void BSC_item_Click_1(object sender, RoutedEventArgs e)
