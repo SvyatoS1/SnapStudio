@@ -56,49 +56,26 @@ namespace SnapStudio
 
         public void undoPicture()
         {
-            if (currentBitmap > 0)
-            {
-                currentBitmap--;
-                setMainPicture(currentBitmap);
-            }
+
         }
 
         public void redoPicture()
         {
-            if (currentBitmap < bitmapList.Count - 1)
-            {
-                currentBitmap++;
-                setMainPicture(currentBitmap);
-            }
+
         }
 
-        /// <summary>
-        /// This changes the main image to a bitmap from the array of bitmaps
-        /// Bitmap class for manipulation needs to be converted to bitmap source
-        /// to be displayed by WPF
-        /// </summary>
-        /// <param name="currentState"></param>
         public void setMainPicture(int currentState)
         {
             mainImage.Source = BitmapToBitmapSource(bitmapList[currentState]);
             currentBitmap = currentState;
         }
 
-        /// <summary>
-        /// For non permanent changes to the main image and aren't added to the state
-        /// </summary>
-        /// <param name="aBitmap"></param>
+
         public void setTempPicture(Bitmap aBitmap)
         {
             mainImage.Source = BitmapToBitmapSource(aBitmap);
         }
 
-        /// <summary>
-        /// Applies a color matrix to the pixels of a bitmap
-        /// </summary>
-        /// <param name="original">Bitmap to be converted</param>
-        /// <param name="cM">ColorMatrix which does the changing</param>
-        /// <returns>Converted Bitmap</returns>
         public Bitmap MatrixConvertBitmap(Bitmap original, ColorMatrix cM)
         {
             Bitmap aBitmap = new Bitmap(original.Width, original.Height);
@@ -124,11 +101,6 @@ namespace SnapStudio
             return aBitmap;
         }
 
-        /// <summary>
-        /// Bitmap -> BitmapSource
-        /// </summary>
-        /// <param name="source"></param>
-        /// <returns></returns>
         public static BitmapSource BitmapToBitmapSource(Bitmap source)
         {
             BitmapSource bitSrc = null;
@@ -184,7 +156,26 @@ namespace SnapStudio
 
         private void Save_item_Click_1(object sender, EventArgs e)
         {
-            
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "JPEG Compressed Image (*.jpg)|*.jpg|GIF Image(*.gif)|*.gif|Bitmap Image(*.bmp)|*.bmp|PNG Image (*.png)|*.png";
+            saveFileDialog.FilterIndex = 1;
+            saveFileDialog.RestoreDirectory = true;
+
+            Nullable<bool> result = saveFileDialog.ShowDialog();
+
+            try
+            {
+                if (result == true)
+                {
+                    Bitmap exportPicture = bitmapList[currentBitmap];
+                    exportPicture.Save(saveFileDialog.FileName);
+                    this.Title = saveFileDialog.FileName;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: Could not write file to disk. Original error: " + ex.Message);
+            }
         }
 
         private void RGB_item_Click_1(object sender, RoutedEventArgs e)
@@ -227,21 +218,11 @@ namespace SnapStudio
             redoPicture();
         }
 
-        /// <summary>
-        /// Sets the picture window to the first state
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void Discard_item_Click_1(object sender, RoutedEventArgs e)
         {
             setMainPicture(0);
         }
 
-        /// <summary>
-        /// Quits the program cleanly
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void Quit_item_Click_1(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
