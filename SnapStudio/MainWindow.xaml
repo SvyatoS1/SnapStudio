@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SnapStudio"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="769" Width="1024">
+    <DockPanel>
+        <Menu x:Name="menuBar" DockPanel.Dock="Top" Width="Auto" Height="20" VerticalAlignment="Top">
+            <MenuItem Header="File" >
 
-    </Grid>
+            </MenuItem>
+
+            <MenuItem Header="Edit">
+
+            </MenuItem>
+
+            <MenuItem Header="Effects" >
+
+            </MenuItem>
+        </Menu>
+        <Image x:Name="mainImage" />
+    </DockPanel>
 </Window>
