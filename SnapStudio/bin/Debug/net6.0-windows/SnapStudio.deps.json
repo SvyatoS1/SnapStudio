@@ -6,6 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+      "SnapStudio/1.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "8.0.6"
+        },
+        "runtime": {
+          "SnapStudio.dll": {}
+        }
+      },
       "Microsoft.Win32.SystemEvents/8.0.0": {
         "runtime": {
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
@@ -36,6 +44,11 @@
     }
   },
   "libraries": {
+    "SnapStudio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Microsoft.Win32.SystemEvents/8.0.0": {
       "type": "package",
       "serviceable": true,
