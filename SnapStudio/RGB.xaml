@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SnapStudio"
-             mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="400">
+             mc:Ignorable="d" Height="400" Width="400">
     <Grid>
         <Slider x:Name="RedSlider" ValueChanged="RedSlider_ValueChanged_1" HorizontalAlignment="Left" Margin="40,65,0,0" VerticalAlignment="Top" Width="320" Maximum="100" Minimum="-100" SmallChange="1" TickFrequency="10"/>
         <Label x:Name="RedLabel" Content="Red" HorizontalAlignment="Left" Margin="40,34,0,0" VerticalAlignment="Top"/>
