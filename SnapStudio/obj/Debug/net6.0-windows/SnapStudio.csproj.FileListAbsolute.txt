@@ -31,3 +31,5 @@ C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\BSC.g
 C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\BSC.baml
 C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\GreyCustom.g.cs
 C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\GreyCustom.baml
+C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\CustomMatrix.baml
+C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\CustomMatrix.g.cs
