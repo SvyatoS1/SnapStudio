@@ -24,6 +24,7 @@ namespace SnapStudio
         private RGB rgbControl;
         private BSC bscControl;
         private GreyCustom greyControl;
+        private CustomMatrix customControl;
         public ColorDialog(MainWindow parentWindow, String cT)
         {
             myParentWindow = parentWindow;
@@ -56,7 +57,13 @@ namespace SnapStudio
                 this.Height = greyControl.Height + 26;
                 this.Title = "Custom Grayscale Filter";
             }
-
+            else if (controlType == "Matrix")
+            {
+                CreateCustomMatrix();
+                this.Width = customControl.Width + 26;
+                this.Height = customControl.Height + 26;
+                this.Title = "Custom Color Matrix Transform";
+            }
 
         }
 
@@ -76,6 +83,11 @@ namespace SnapStudio
         {
             greyControl = new GreyCustom(myParentWindow, this);
             this.Content = greyControl;
+        }
+        private void CreateCustomMatrix()
+        {
+            customControl = new CustomMatrix(myParentWindow, this);
+            this.Content = customControl;
         }
     }
 }
