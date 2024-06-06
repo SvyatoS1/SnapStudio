@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qAu8Rzt/rqVhBUyoXqMwhkw/b61B5nE3IybdScolyQmrsVFFEBea/uu1oaKoEqsqRn3f2Xsq9fyr1fNycvXbSg==",
+  "dgSpecHash": "foNjff0zRNFRc/5PWxePHPhC3RxbKYSvEa6TpnaO8g475PpfxFOxn54AtUJOO4yz874Mw+n/1xQ3RqWp/lDwug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simch\\Source\\Repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj",
+  "projectFilePath": "C:\\Users\\simch\\source\\repos\\SnapStudio\\SnapStudio\\SnapStudio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simch\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\simch\\.nuget\\packages\\system.drawing.common\\8.0.6\\system.drawing.common.8.0.6.nupkg.sha512"
