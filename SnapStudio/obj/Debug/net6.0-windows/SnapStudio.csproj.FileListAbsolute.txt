@@ -27,3 +27,5 @@ C:\Users\simch\Source\Repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\Color
 C:\Users\simch\Source\Repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\RGB.g.cs
 C:\Users\simch\Source\Repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\ColorDialog.baml
 C:\Users\simch\Source\Repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\RGB.baml
+C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\BSC.g.cs
+C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\BSC.baml
