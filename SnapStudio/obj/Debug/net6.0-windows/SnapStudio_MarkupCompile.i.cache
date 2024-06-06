@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\simch\Source\Repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\
+C:\Users\simch\source\repos\SnapStudio\SnapStudio\obj\Debug\net6.0-windows\
 SnapStudio
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\simch\Source\Repos\SnapStudio\SnapStudio\App.xaml
-3698705930
+C:\Users\simch\source\repos\SnapStudio\SnapStudio\App.xaml
+41433623296
 
-7396716143
+8-600924898
 195612144644
-ColorDialog.xaml;MainWindow.xaml;RGB.xaml;
+BSC.xaml;ColorDialog.xaml;MainWindow.xaml;RGB.xaml;
 
 True
 
