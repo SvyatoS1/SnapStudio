@@ -22,6 +22,7 @@ namespace SnapStudio
         private MainWindow myParentWindow;
         private String controlType;
         private RGB rgbControl;
+        private BSC bscControl;
         public ColorDialog(MainWindow parentWindow, String cT)
         {
             myParentWindow = parentWindow;
@@ -40,12 +41,27 @@ namespace SnapStudio
                 this.Height = rgbControl.Height + 26;
                 this.Title = "Red, Green, and Blue Channel Modifier";
             }
+            else if (controlType == "BSC")
+            {
+                CreateColorBSC();
+                this.Width = bscControl.Width + 26;
+                this.Height = bscControl.Height + 26;
+                this.Title = "Brightness, Saturation, and Contrast Modifier";
+            }
+
+
         }
 
         private void CreateRGB()
         {
             rgbControl = new SnapStudio.RGB(myParentWindow, this);
             this.Content = rgbControl;
+        }
+
+        private void CreateColorBSC()
+        {
+            bscControl = new BSC(myParentWindow, this);
+            this.Content = bscControl;
         }
     }
 }
