@@ -13,6 +13,9 @@
     <Compile Update="ColorDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GreyCustom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="RGB.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ColorDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GreyCustom.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
