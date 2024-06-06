@@ -11,7 +11,6 @@ SnapStudio is an open-source application currently in development, allowing user
 - **Custom Matrix Transform**: Allows users to apply custom matrix transformations to images.
 - **Optimized GrayScale**: Uses optimized algorithms to convert images to grayscale.
 - **Invert**: Allows users to invert the colors of an image.
-- **File Information**: Retrieve file information from the operating system, including file name, creation date, and modification date.
 
 ## Installation
 
