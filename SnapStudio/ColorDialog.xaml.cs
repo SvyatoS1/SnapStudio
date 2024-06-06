@@ -23,6 +23,7 @@ namespace SnapStudio
         private String controlType;
         private RGB rgbControl;
         private BSC bscControl;
+        private GreyCustom greyControl;
         public ColorDialog(MainWindow parentWindow, String cT)
         {
             myParentWindow = parentWindow;
@@ -48,6 +49,13 @@ namespace SnapStudio
                 this.Height = bscControl.Height + 26;
                 this.Title = "Brightness, Saturation, and Contrast Modifier";
             }
+            else if (controlType == "Grey")
+            {
+                CreateCustomGrey();
+                this.Width = greyControl.Width + 26;
+                this.Height = greyControl.Height + 26;
+                this.Title = "Custom Grayscale Filter";
+            }
 
 
         }
@@ -62,6 +70,12 @@ namespace SnapStudio
         {
             bscControl = new BSC(myParentWindow, this);
             this.Content = bscControl;
+        }
+
+        private void CreateCustomGrey()
+        {
+            greyControl = new GreyCustom(myParentWindow, this);
+            this.Content = greyControl;
         }
     }
 }
